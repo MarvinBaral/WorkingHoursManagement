@@ -4,8 +4,11 @@
 #include <Constants.au3>
 #include <GUIConstants.au3>
 
-Global Const $FILENAME = "saveWorkingHours.csv"
-Global Const $TOPIC_FILE = "topics.txt"
+If Not FileExists("data/") Then
+   DirCreate("data")
+EndIf
+Global Const $FILENAME = "data/saveWorkingHours.csv"
+Global Const $TOPIC_FILE = "data/topics.txt"
 If Not FileExists($TOPIC_FILE) Then
    FileWrite($TOPIC_FILE, "software" & @CRLF & "hardware" & @CRLF & "other")
 EndIf

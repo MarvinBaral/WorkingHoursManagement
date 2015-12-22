@@ -7,7 +7,7 @@
 	manage workinghours
 
 #ce ----------------------------------------------------------------------------
-#include "startStopWorkingIncludes.au3"
+#include "includes/startStopWorkingIncludes.au3"
 
 $lastLine = _FileCountLines($FILENAME)
 $line = FileReadLine($FILENAME, $lastLine)
@@ -21,7 +21,7 @@ $endingTime = _NowCalc()
 MsgBox(0, "starting time", "You started working at " & $startingTime)
 $endingTime = _MsgBoxWithTimeEditOption($endingTime)
 $topic = _GetTopic($TOPIC_LIST)
-$comment = InputBox("Comment", "You entered """ & $topic & """ as topic. Please neter a comment or a subtopic here to specfy what you did work.", "none")
+$comment = InputBox("Comment", "You entered """ & $topic & """ as topic. Please neter a comment or a subtopic here to specify what you did work.", "none")
 $pauseMinutes = InputBox("pause time", "Enter the time [minutes], which you didn't work in the specified time.", "0")
 $pauseSeconds = $pauseMinutes * 60
 
