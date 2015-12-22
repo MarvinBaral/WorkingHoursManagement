@@ -5,7 +5,11 @@
 #include <GUIConstants.au3>
 
 Global Const $FILENAME = "saveWorkingHours.csv"
-Global Const $TOPIC_LIST = FileReadToArray("topics.txt")
+Global Const $TOPIC_FILE = "topics.txt"
+If Not FileExists($TOPIC_FILE) Then
+   FileWrite($TOPIC_FILE, "software" & @CRLF & "hardware" & @CRLF & "other")
+EndIf
+Global Const $TOPIC_LIST = FileReadToArray($TOPIC_FILE)
 
 Func _MsgBoxWithTimeEditOption($time, $heading = "Workinghours-Management", $content = "Is this time correct: " & $time)
    $response = MsgBox($MB_YESNOCANCEL , $heading, $content)

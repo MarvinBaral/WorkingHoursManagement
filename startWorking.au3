@@ -4,7 +4,7 @@
  Author:         Marvin Baral
 
  Script Function:
-	manage workin hours
+	manage working hours
 
 #ce ----------------------------------------------------------------------------
 #include "startStopWorkingIncludes.au3"
