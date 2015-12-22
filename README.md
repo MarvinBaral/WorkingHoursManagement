@@ -1,5 +1,5 @@
 # WorkingHoursManagement
-Author: Marvin Baral (marvin.tgv@arcor.de)
+Author: Marvin Baral (marvinbaral1997@gmail.com)
 
 Program to logg your working hours in a .csv - file. Written in AutoIt.
 To start logging you have to execute "startWorking" and to stop it you have to execute "stopWorkingAndCalcTime".
