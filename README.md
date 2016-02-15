@@ -7,4 +7,6 @@ It may be, that you have to compile the .au3 files yourself if they don't work f
 
 The working hour entries are saved in data/saveWorkingHours.csv, which can be opened by excel or openoffce,... .
 
+To make these scripts perfect easily working, you have to create links of both .exe files to your Desktop. Do this by choosing "Send To" > "Desktop" in the right-click menue.
+
 To add/ remove available topics, you have to edit data/topics.txt. Topics are separated by newlines.
